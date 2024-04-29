@@ -1,33 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SOS Geladeiras</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dosis:wght@200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./assets/css/com.css">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Título da Página -->
-    <title>PROJETO TSM</title>
-    
-    <style type="text/css">
-      body {
-        color: white;
-        background-image: url("assets/img/fundo.png");
-        background-color: rgba(0, 0, 0, 0.6);
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        background-blend-mode: darken;
-      }
-    </style>
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
-    <!-- Google Tag Manager -->
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+        <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -35,55 +37,303 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-MP957MDL');</script>
 <!-- End Google Tag Manager -->
 
-  </head>
-  <body>
 
-    <!-- Google Tag Manager (noscript) -->
+</head>
+<body>
+
+        <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MP957MDL"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    
-    <header class="py-4">
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Carregando...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light d-none d-lg-block">
+        <div class="row align-items-center top-bar">
+            <div class="col-lg-3 col-md-12 text-center text-lg-start">
+                <a class="navbar-brand m-0 p-0">
+                    <h1 class="text-primary m-0">SOS Geladeiras</h1>
+                </a>
+            </div>
+            <div class="col-lg-9 col-md-12 text-end">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    
+                    <p class="m-0"></p>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <i class="far fa-envelope-open text-primary me-2"></i>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square bg-white text-primary me-1" ><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-0"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid nav-bar bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 py-lg-0 px-lg-4">
+            <a href="" class="navbar-brand d-flex align-items-center m-0 p-0 d-lg-none">
+                <h1 class="text-primary m-0">SOS Geladeiras</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav me-auto">
+
+                    <a class="nav-item nav-link active"><i class="fa fa-map-marker-alt text-primary me-2"></i><span  id="address"></span></a>
+                </div>
+
+                <div class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4 bg-primary d-flex align-items-center">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 45px; height: 45px;">
+                        <i class="fa fa-phone-alt text-primary"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .4);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+
+
+              
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Veja o vídeo abaixo</h5>
+
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Descubra como você mesmo pode consertar sua Geladeira</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2"></p>
+                                <a  class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Veja abaixo</a>
+                                <a  class=" btn btn-secondary py-md-3 px-md-5 animated slideInRight">Geladeira com defeito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-22.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .4);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Veja o vídeo abaixo</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Manutenção em Geladeiras</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2"></p>
+                                <a class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Veja abaixo</a>
+                                <a  class=" btn btn-secondary py-md-3 px-md-5 animated slideInRight">Geladeira com defeito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+        <header class="py-4">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
-            <!-- kade do grau -->
-            <img class="img-fluid" src="./assets/img/logotsm.png">
-            <!-- Headline -->
 
-            <h3 class="my-4"><b></b></h3>
 
-            <p style = "font-family:Zapf-Chancery">Descubra como você mesmo pode consertar sua Geladeira</p>
+                <!-- VSL -->
+       <div id="vid_662f11eb93c4b3000b09110a" style="position:relative;width:100%;padding: 56.25% 0 0;"> <img id="thumb_662f11eb93c4b3000b09110a" src="https://images.converteai.net/9f64af8c-934f-481e-830a-bcf1ad3e56b9/players/662f11eb93c4b3000b09110a/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"> <div id="backdrop_662f11eb93c4b3000b09110a" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div> </div> <script type="text/javascript" id="scr_662f11eb93c4b3000b09110a"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/9f64af8c-934f-481e-830a-bcf1ad3e56b9/players/662f11eb93c4b3000b09110a/player.js", s.async=!0,document.head.appendChild(s); </script>
 
-            <!-- Headline -->
-            <h3 class="my-4"><b></b></h3>
+       <div id="callMethod" href="https://pay.kiwify.com.br/tHfddPP"  class="mt-5 d-none btn btn-secondary py-md-3 px-md-5 animated slideInRight">Entrar para o projeto TSM Geladeiras</a>
 
-            <!-- VSL -->
-       <div id="vid_662339d3b5ae920008e90ba2" style="position:relative;width:100%;padding: 56.25% 0 0;"> <img id="thumb_662339d3b5ae920008e90ba2" src="https://images.converteai.net/9f64af8c-934f-481e-830a-bcf1ad3e56b9/players/662339d3b5ae920008e90ba2/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"> <div id="backdrop_662339d3b5ae920008e90ba2" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div> </div> <script type="text/javascript" id="scr_662339d3b5ae920008e90ba2"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/9f64af8c-934f-481e-830a-bcf1ad3e56b9/players/662339d3b5ae920008e90ba2/player.js", s.async=!0,document.head.appendChild(s); </script>
 
-            <!-- Botão -->
-            <div id="callMethod" class="mt-4 d-none">
-              <a href="https://pay.kiwify.com.br/tHfddPP" class="img-fluid">
-                <img class="img-fluid" src="./assets/img/botao01.PNG">
               
-                          <!-- Termos de Uso e Política de Privacidade -->
-            <div class="text-white mt-4"><a href="termos.html" class="text-white">Termos de Uso</a> | <a href="privacidade.html" class="text-white">Política de Privacidade</a></div>  
-              </a>
           </div>
         </div>
       </div>
+
+
+      <!--INÍCIO DO SCRIPT-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>$.get("https://ipinfo.io/json", function (response) { $("#address").html(response.city);
+}, "jsonp");
+</script>
+
+<!--FIM DO SCRIPT-->
+
     </header>
 
     <script type="text/javascript">
-      setTimeout(() => {document.getElementById("callMethod").classList.remove("d-none")}, 315000); // temporização da Call to Action (em milissegundos)
+      setTimeout(() => {document.getElementById("callMethod").classList.remove("d-none")}, 606000); // temporização da Call to Action (em milissegundos)
     </script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="./assets/js/com.js"></script>
 
-        <!-- Facebook Pixel Code -->
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="text-secondary text-uppercase">Depoimentos</h6>
+                <h1 class="mb-5">Nossos clientes dizem!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-4 mb-4">
+                        <p class="mb-0">Obrigadaa! a minha era só a pecinha do motor <p>&#x2764;</p></p>
+                    </div>
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
+                    <div class="mb-2">
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                    </div>
+                    <h5 class="mb-1">Thaís Nogueira</h5>
+                    <p class="m-0">Nutricionista</p>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-4 mb-4">
+                        <p class="mb-0">está difícil encontrar profissionais assim, obrigado. eu ia gasta um dinheirão</p>
+                    </div>
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
+                    <div class="mb-2">
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                    </div>
+                    <h5 class="mb-1">Marcello Ferroni</h5>
+                    <p class="m-0">Professor</p>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-4 mb-4">
+                        <p class="mb-0">Este vídeo me ensinou a resolver o defeito da minha geladeira, o técnico que veio aqui queria me cobrar 400 reais... Agradeço por criarem este projeto me ajudou demais</p>
+                    </div>
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
+                    <div class="mb-2">
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                    </div>
+                    <h5 class="mb-1">Júnior Silva</h5>
+                    <p class="m-0"></p>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-4 mb-4">
+                        <p class="mb-0">Minha geladeira não estava gelando a parte de baixo, este vídeo resolveu meu problema, precisei só desligar a geladeira por 1 dia, obrigadaa!</p>
+                    </div>
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
+                    <div class="mb-2">
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                        <small class="fa fa-star text-secondary"></small>
+                    </div>
+                    <h5 class="mb-1">Leticia nazaré</h5>
+                    <p class="m-0">Tutora de animais</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Rede sociais</h4>
+                
+                
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Horário de funcionamento</h4>
+                    <h6 class="text-light">Segunda-feira a Sexta-feira</h6>
+                    <p class="mb-4">08.00 AM - 18.00 PM</p>
+                    <h6 class="text-light">Sábado</h6>
+                    <p class="mb-0">08.00 AM - 12.00 PM</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Assitência Técnica</h4>
+                    <a class="btn btn-link">Máquinas de lavar</a>
+                    <a class="btn btn-link">Geladeiras</a>
+                    <a class="btn btn-link">Frezeers</a>
+                    <a class="btn btn-link">Expositores</a>
+                    <a class="btn btn-link">Ar condicionado</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Boas Notícias</h4>
+                    <p>Você mesmo pode resolver o defeito da sua Geladeira, mesmo que não entenda nada de refrigeração.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+
+                        <!-- Termos de Uso e Política de Privacidade -->
+            <div class="text-white mt-4"><a href="termos.html" class="text-white">Termos de Uso</a> | <a href="privacidade.html" class="text-white">Política de Privacidade</a></div>
+          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+            <!-- Facebook Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -114,6 +364,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   gtag('config', 'AW-11437678667');
 </script>
 
-  </body>
+</body>
 </html>
-
